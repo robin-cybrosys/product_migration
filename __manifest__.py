@@ -9,6 +9,7 @@
     'assets': {
         'web.assets_backend': {
             '/product_migration/static/src/js/product_fetch.js',
+            '/product_migration/static/src/js/custom.js',
         },
         'web.assets_qweb': {
             '/product_migration/static/src/xml/product_fetch.xml',
