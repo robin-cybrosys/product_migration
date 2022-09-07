@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_fetch_form" model="ir.ui.view">
+            <field name="name">product form</field>
+            <field name="model">product.fetch</field>
+            <field name="arch" type="xml">
+                <form create="0" edit="0">
+                    <header>
+                        <button class="btn-primary"
+                                name="migrate_btn" type="object"
+                                string="Migrate"
+                        />
+<!--                                attrs="{'invisible': [('status', '!=', 'draft_state')]}"-->
+                        <!--                       <field name="status" string="Status" widget="statusbar"/>-->
+                    </header>
+<!--                    <sheet>-->
+<!--                    </sheet>-->
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="product_fetch_action">
+            <field name="name">Migration</field>
+            <field name="res_model">product.fetch</field>
+            <field name="view_mode">form</field>
+        </record>
+        <menuitem name="Product Migration" id="migration_root_menu" sequence="4"/>
+        <menuitem name="Product Migration" id="product_migration_menu" parent="migration_root_menu" action="product_fetch_action"/>
+    </data>
+</odoo>
