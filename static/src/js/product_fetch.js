@@ -32,11 +32,9 @@ odoo.define("product_migration.product_fetch", function (require) {
           if (result) {
             $("#ItemPreview").html(
               "<center>" +
-                result.rec_14 +
-                " RECORDS TO BE MIGRATED FROM V14" +
+                " RECORDS FROM V14 : " +result.rec_14 +
                 " <br/>" +
-                result.rec_15 +
-                " DUPLICATE RECORDS EXISTS ON V15" +
+                " EXISTING RECORDS ON V15 : " +result.rec_15 +
                 "<br/><br/><h6> MIGRATION COMPLETED! </h6></center>"
             );
 

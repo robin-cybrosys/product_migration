@@ -28,7 +28,7 @@ class ProductFetch(models.Model):
                                                       'lst_price',
                                                       'standard_price',
                                                       ]})
-        print("<<<<", len(records_15), "DUPLICATE RECORDS EXISTS ON V15 >>>>")
+        print("<<<<", len(records_15), "RECORDS EXISTS ON V15 >>>>")
 
         url_14 = 'http://localhost:8014'
         db_14 = "odoo14_com"
@@ -75,7 +75,7 @@ class ProductFetch(models.Model):
                                                       'lst_price',
                                                       'standard_price',
                                                       ]})
-        print("<<<<", len(records_15), "DUPLICATE RECORDS EXISTS ON V15 >>>>")
+        print("<<<<", len(records_15), "RECORDS EXISTS ON V15 >>>>")
 
         url_14 = 'http://localhost:8014'
         db_14 = "odoo14_com"

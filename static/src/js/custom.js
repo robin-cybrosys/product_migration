@@ -23,11 +23,9 @@ odoo.define('crm_dashboard.custom', function (require) {
           if (result) {
             $("#ItemPreview").html(
               "<center>" +
-                result.rec_14 +
-                " RECORDS TO BE MIGRATED FROM V14" +
-                " <br/>" +
-                result.rec_15 +
-                " DUPLICATE RECORDS EXISTS ON V15" +
+                "<br/> RECORDS FROM V14 : " +result.rec_14 +
+                " <br/><br/>" +
+                " EXISTING RECORDS ON V15 : " +result.rec_15 +
                 "<br/><br/></center>"
             );
 
